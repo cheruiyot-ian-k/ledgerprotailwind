@@ -6,3 +6,7 @@
 .sbb{
   @apply shadow-md px-[20px] py-[5px];
 }
+
+.bbb{
+  @apply border mx-auto w-[150px] border-red-900 h-[45px] rounded-[25px] ;
+}
