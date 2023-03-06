@@ -276,12 +276,12 @@ const Home = () => {
                 <div className="tenone">
                     <p>Signup out newsletter to get udpdate information, insights or news</p>
                 </div>
-                <div className="tentwo flex gap-[10px]">
+                <div className="tentwo flex ">
                     <div>
-                        <input className="h-[43px] w-[120%] px-[14px] rounded-[20px]" type="text" placeholder="Enter your email" />
+                        <input className="h-[43px] px-[14px] rounded-[20px]" type="text" placeholder="Enter your email" />
                     </div>
                     <div>
-                        <button className="border p-[10px] rounded-[20px] bg-red-800">Sign up</button>
+                        <button className="border p-[10px] ml-[-34px] rounded-[20px] bg-red-800">Sign up</button>
                     </div>
                 </div>
 

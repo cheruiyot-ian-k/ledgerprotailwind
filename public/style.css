@@ -656,6 +656,18 @@ video {
   margin-left: -39px;
 }
 
+.ml-\[-40px\] {
+  margin-left: -40px;
+}
+
+.ml-\[-44px\] {
+  margin-left: -44px;
+}
+
+.ml-\[-34px\] {
+  margin-left: -34px;
+}
+
 .flex {
   display: flex;
 }
@@ -738,6 +750,10 @@ video {
 
 .w-\[40\%\] {
   width: 40%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
 }
 
 .flex-col {
