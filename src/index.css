@@ -7,6 +7,19 @@
   --hover: rgb(7, 154, 7);
 }
 
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}
+
 .sbb{
   @apply shadow-md px-[20px] md:px-[35px] lg:py-[50px] lg:py-[10px] py-[5px];
 }
@@ -14,6 +27,12 @@
 .slsd{
   box-shadow:  240px 180px 500px #9c9494;
              /* -50px -50px 100px #363434; */
+}
+.servsh{
+  display: none;
+}
+.servli:hover .servsh{
+  display: block;
 }
 
 .bbb{

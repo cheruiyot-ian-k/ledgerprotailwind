@@ -29,7 +29,7 @@ const Navbar = () =>{
         <div className="navbar fixed top-px w-screen mt-[-1px]">
 
         
-        <div className="nav relative  flex justify-between px-[2%] lg:py-[13px] py-[3px] lg:pr-[70px] md:py-[8px] bg-slate-50">
+        <div className="nav relative cursor-pointer  flex justify-between px-[2%] lg:py-[13px] py-[3px] lg:pr-[70px] md:py-[8px] bg-slate-50">
             <div className="logonav">
                 <img className="h-[32px] lg:h-[40px]" src={require("../images/logo/logolp.jpg")} alt="" />
             </div>
@@ -48,15 +48,22 @@ const Navbar = () =>{
                         <div className="lg:hidden"><FontAwesomeIcon icon={faUser}/></div>
                         <div>About Us</div>
                     </li>
-                    <li className="flex gap-[10px]">
+                    <li className="servli flex gap-[10px] relative">
                         <div className="lg:hidden"><FontAwesomeIcon icon={faHandshake}/></div>
-                        <div>Services <span className="lg:inline lg:mt-[5px] sm:hidden md:hidden"><FontAwesomeIcon icon={faAngleDown}/></span></div>
-                        
+                        <div className="serv">Services <span className="lg:inline lg:mt-[45px] sm:hidden md:hidden"><FontAwesomeIcon icon={faAngleDown}/></span>
+                            <div className="servsh absolute lg:bg-slate-50 lg:w-[300px] lg:text-center lg:mt-[45px] lg:ml-[-100px] lg:shadow-md top-0 left-0 z-1"> 
+                                <div className="lg:p-[10px] lg:text-[16px] lg:border-t"><h3>Tax</h3></div>
+                                <div className="lg:p-[10px] lg:border-t lg:border-green-500  lg:text-[16px]"><h3>Outsourced Services</h3></div>
+                                <div className="lg:p-[10px] lg:border-t lg:border-green-500  lg:text-[16px]"><h3>Advisory</h3></div>
+                            
+                            </div>
+                        </div>
+
                     </li>
                     <li className="border-t border-gray-400 lg:hidden"></li>
-                    <li className="flex gap-[10px] lg:border lg:p-[12px] lg:mt-[-12px] lg:bg-green-500 lg:rounded-full lg:w-[160px] lg:flex lg:justify-center lg:align-center">
+                    <li className="flex gap-[10px] lg:border lg:p-[12px] lg:mt-[-12px] lg:bg-green-500 lg:rounded-full lg:w-[160px] lg:flex lg:justify-center lg:align-center ">
                         <div className="mt-[1px] lg:hidden "><FontAwesomeIcon icon={faContactCard}/></div>
-                        <div>Contact Us</div>
+                        <div className=""><span className="lg:text-[16px]"> Contact Us </span></div>
                     </li>
                 </ul>
             </div>

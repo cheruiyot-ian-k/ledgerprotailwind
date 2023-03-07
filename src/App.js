@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App noSelect">
       {/* npx tailwindcss -i ./src/index.css -o ./public/style.css --watch */}
      
       <Home/>

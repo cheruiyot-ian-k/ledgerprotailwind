@@ -7,7 +7,7 @@ const Footer = () =>{
 
     return(
         <div className="footer">
-             <div className="eleven flex flex-col lg:flex-row lg:justify-between  gap-[30px] px-[17%] py-[30px] lg:py-[60px] bg-neutral-900 text-slate-50 ">
+             <div className="eleven flex flex-col lg:flex-row lg:justify-between  gap-[30px] px-[9%] md:px-[17%] py-[30px] lg:py-[60px] bg-neutral-900 text-slate-50 ">
                 <div className="elevenone flex flex-col lg:w-[35%] gap-[20px]">
                    <div>
                     <h3 className="font-mono text-sm md:text-xl font-bold"><span className="text-green-600 md:text-2xl"> Ledgerpro </span> business consultants</h3>

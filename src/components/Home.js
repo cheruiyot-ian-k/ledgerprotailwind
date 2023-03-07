@@ -20,8 +20,8 @@ const Home = () => {
             
             {/* the first block  INTIAL */}
 
-            <div className="one h-[400px] lg:h-[700px] bg-gray-400 px-[17%] flex justify-center flex-col text-slate-50 lg:mt-[60px] mt-[40px]">
-                <h2 className="mb-[25px] text-2xl md:text-3xl font-semibold lg:text-[45px] lg:w-[50%] leading-[1.8]">To Protect Your Business Always</h2>
+            <div className="one h-[400px] lg:h-[700px] bg-gray-400 px-[10%] md:px-[17%] flex justify-center flex-col text-slate-50 lg:mt-[60px] mt-[40px]">
+                <h2 className="mb-[25px] text-2xl md:text-3xl font-semibold lg:text-[45px] lg:w-[50%] leading-[1.2]">To Protect Your Business <span className="mt-[20px]"> Always </span></h2>
                 <p className="mb-[30px] text-sm md:text-base md:w-[50%]">  Ledgerpro Business Consultants is your friendly, accessible professional Tax, accounting,
                     Payroll, Internal Audit and advisory firm. We are masters at our craft.  </p>
                 <button className="bbb"> Contact us</button>
@@ -38,7 +38,7 @@ const Home = () => {
                         <p className="text-sm md:text-base mt-[5px]">Affordable accounting services for every business</p>
                     </div>
                 </div>
-                <div className="tworight lg:w-[40%] px-[17%] lg:px-[0] py-[20px] lg:flex lg:flex-col lg:justify-between">
+                <div className="tworight lg:w-[40%] px-[10%] md:px-[17%] lg:px-[0] py-[20px] lg:flex lg:flex-col lg:justify-between">
                     <div className="trone">
                         <h3 className="mb-[10px] font-semibold text-green-500">WHO ARE WE</h3>
                         <h2 className="mb-[10px] text-xl font-semibold">Professionals in Tax, Accounting, Management and Business Consultancy.</h2>
@@ -66,7 +66,7 @@ const Home = () => {
             {/* the third block  ICON DETAILS */}
 
 
-            <div className="three px-[17%] py-[20px] lg:py-[40px] flex flex-col lg:flex-row gap-[20px]">
+            <div className="three px-[10%] md:px-[17%] py-[20px] lg:py-[40px] flex flex-col lg:flex-row gap-[20px]">
                 <div className="threeone flex gap-[20px]">
                     <div className="threeicon">
                         <span className="thic"><FontAwesomeIcon icon={faThumbsUp}/></span>
