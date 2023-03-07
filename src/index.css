@@ -8,16 +8,16 @@
 }
 
 .sbb{
-  @apply shadow-md px-[20px] md:px-[35px] xl:py-[50px] xl:py-[10px] py-[5px];
+  @apply shadow-md px-[20px] md:px-[35px] lg:py-[50px] lg:py-[10px] py-[5px];
 }
 
 .slsd{
-  box-shadow:  240px 180px 500px #383838;
+  box-shadow:  240px 180px 500px #9c9494;
              /* -50px -50px 100px #363434; */
 }
 
 .bbb{
-  @apply border-green-600 w-[150px] xl:w-[200px] bg-green-600 h-[40px] xl:h-[50px] rounded-[25px] text-stone-900 font-semibold ;
+  @apply border-green-600 w-[150px] lg:w-[200px] bg-green-600 h-[40px] lg:h-[50px] rounded-[25px] text-stone-900 font-semibold ;
 }
 
 .thic{
@@ -28,7 +28,7 @@
   @apply flex flex-col items-center justify-center relative;
 }
 .ppim{
-  @apply bg-gray-200 w-[200px] xl:w-[230px];
+  @apply bg-gray-200 w-[200px] lg:w-[230px];
 }
 
 .ten{
@@ -59,5 +59,39 @@
   .eight{
     background-image: url(images/mobile/Happy\ woman.jpg);
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  }
+}
+@media only screen and (min-width: 480px) {
+  .one{
+    background-image: url(images/mobile/guyandladylap\ \(1\).jpg);
+     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  }
+  .twoleft{
+    background-image: url(images/mobile/Fist\ Bump.jpg);
+  }
+  .four{
+    background-image: url(images/mobile/Black-couple.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  }
+  .eight{
+    background-image: url(images/mobile/Happy\ woman.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .one{
+    background-image: url(images/pc/guyandladylap.jpg);
+     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+  }
+  .twoleft{
+    background-image: url(images/pc/Deal.jpg);
+  }
+  .four{
+    background-image: url(images/pc/joyful-successful-sales-agent-presenting-content-tablet.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+  }
+  .eight{
+    background-image: url(images/pc/Black-couple.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
   }
 }
