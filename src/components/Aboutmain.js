@@ -62,21 +62,63 @@ const Aboutmain = () =>{
 
     }
 
-
+const [aboutKeyValue, setAboutKeyValue] = useState(1)
+const aboutList = [
+    {
+    key: 1, 
+        label: 'Our Process', 
+        linkTo: '/About/Process'
+    }, 
+        key: 2, 
+        label: 'Firm Profile', 
+        linkTo: '/About/Profile'
+    }, 
+          key: 3, 
+        label: 'Our Team', 
+        linkTo: '/About/Team'
+    }, 
+]
+const returnHeadingText = (value) => {
+switch(value){
+    case 1: 
+        return 'Our Process'
+    case 2: 
+        return 'Firm Profile'
+    case 3: 
+        return 'Our Team'
+    default: 
+        reuturn ''
+}
+}
+const returnHeadingSubText = (value) => {
+switch(value){
+    case 1: 
+        return 'Here you can learn about Our Process'
+    case 2: 
+        return 'Here you can learn about Firm Profile'
+    case 3: 
+        return ' Here you can learn about Our Team'
+    default: 
+        reuturn ''
+}
+}
 
 
 return(
     <div className="aboutmain mt-[40px]">
         <div className="abone relative flex flex-col justify-center items-center text-center px-[10%] h-[260px] bg-gray-200">
             <div>
-                <h2 className="text-[30px] font-semibold">{mh2}</h2>
-                <p className="text-sm">{mp}</p>
+                <h2 className="text-[30px] font-semibold">{returnHeadingText(aboutKeyValue)}</h2>
+                <p className="text-sm">{returnHeadingSubText(aboutKeyValue)}</p>
             </div>
             <div className="abtwo text-left w-[70%] lg:w-[300px] lg:self-start lg:px-[20px] bg-teal-100 px-[10%] py-[20px] rounded-xl absolute bottom-[-100px] lg:bottom-[-200px]">
                 <h3 className="mb-[15px] font-semibold ">About</h3>
-               <Link to='/About/Process'> <p onClick={procl} className="prol text-sm mt-[10px] text-green-500">Our Process <span><FontAwesomeIcon icon={faArrowRight}/></span></p></Link>
-               <Link to='/About/Profile'><p onClick={profcl} className="profc text-sm mt-[10px]">Firm Profile <span><FontAwesomeIcon icon={faArrowRight}/></span></p></Link>
-               <Link to='/About/Team'><p onClick={teamcl} className="teamc text-sm mt-[10px]">Our Team <span><FontAwesomeIcon icon={faArrowRight}/></span></p></Link>
+                                        {aboutList.map((item, index, arr) => {
+                                        return   <Link to={item.linkTo}> <p onClick={() => {setAboutKeyValue(item.key}} className=`prol text-sm mt-[10px] ${item.key === aboutKeyValue ? 'text-green-500' : 'text-black' }`>{item.label} <span><FontAwesomeIcon icon={faArrowRight}/></span></p></Link>
+    }}
+//                <Link to='/About/Process'> <p onClick={procl} className="prol text-sm mt-[10px] text-green-500">Our Process <span><FontAwesomeIcon icon={faArrowRight}/></span></p></Link>
+//                <Link to='/About/Profile'><p onClick={profcl} className="profc text-sm mt-[10px]">Firm Profile <span><FontAwesomeIcon icon={faArrowRight}/></span></p></Link>
+//                <Link to='/About/Team'><p onClick={teamcl} className="teamc text-sm mt-[10px]">Our Team <span><FontAwesomeIcon icon={faArrowRight}/></span></p></Link>
             </div>
         </div>
         
