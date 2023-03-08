@@ -21,7 +21,7 @@ const Home = () => {
             {/* the first block  INTIAL */}
 
             <div className="one h-[400px] lg:h-[700px] bg-gray-400 px-[10%] md:px-[17%] flex justify-center flex-col text-slate-50 lg:mt-[60px] mt-[40px]">
-                <h2 className="mb-[25px] text-2xl md:text-3xl font-semibold lg:text-[45px] lg:w-[50%] leading-[1.2]">To Protect Your Business <span className="mt-[20px]"> Always </span></h2>
+                <h2 className="mb-[25px] text-2xl md:text-3xl font-semibold lg:text-[47px] lg:w-[55%] leading-[1.2]">To Protect Your Business <span className="mt-[20px]"> Always </span></h2>
                 <p className="mb-[30px] text-sm md:text-base md:w-[50%]">  Ledgerpro Business Consultants is your friendly, accessible professional Tax, accounting,
                     Payroll, Internal Audit and advisory firm. We are masters at our craft.  </p>
                 <button className="bbb"> Contact us</button>
@@ -33,7 +33,7 @@ const Home = () => {
 
             <div className="two flex flex-col lg:px-[17%] lg:py-[50px] flex-col-reverse lg:flex-row lg:gap-[50px] ">
                 <div className="twoleft lg:w-[50%] h-[300px] lg:h-[400px] bg-blue-200 flex items-end">
-                    <div className="twodet w-[60%] md:w-[41%] bg-slate-50 shadow-md px-[13px] py-[7px]">
+                    <div className="twodet w-[60%] lg:w-[53%] md:w-[41%] bg-slate-50 shadow-md px-[13px] py-[7px]">
                         <h2 className="font-semibold md:font-bold">Professional Approach And Quality Serviceses</h2>
                         <p className="text-sm md:text-base mt-[5px]">Affordable accounting services for every business</p>
                     </div>
@@ -41,7 +41,7 @@ const Home = () => {
                 <div className="tworight lg:w-[40%] px-[10%] md:px-[17%] lg:px-[0] py-[20px] lg:flex lg:flex-col lg:justify-between">
                     <div className="trone">
                         <h3 className="mb-[10px] font-semibold text-green-500">WHO ARE WE</h3>
-                        <h2 className="mb-[10px] text-xl font-semibold">Professionals in Tax, Accounting, Management and Business Consultancy.</h2>
+                        <h2 className="mb-[10px] text-xl lg:text-[27px] font-semibold">Professionals in Tax, Accounting, Management and Business Consultancy.</h2>
                         <p className="text-sm md:text-base">Ledgerpro Business Consultants comprises of a team of experienced and diversely specialized 
                         professionals offering a wide range of tax and accounting advisory services.</p>
                     </div>
@@ -105,7 +105,7 @@ const Home = () => {
 
 
             <div className="four text-slate-50 h-[400px] bg-teal-200 text-center flex flex-col justify-center lg:items-center px-[17%]">
-                <h2 className="mb-[20px] text-[28px] font-semibold lg:w-[40%]">Solve All Your Tax Problems Under One Room </h2>
+                <h2 className="mb-[20px] lg:text-[31px] text-[28px] font-semibold lg:w-[40%]">Solve All Your Tax Problems Under One Room </h2>
                 <p className="mb-[20px] text-sm md:text-base lg:w-[40%]"> Whether you are a one-person shop or a multinational corporation, or anything in between, ledger pro can build a solution to meet you needs</p>
                 <button className="border-4 text-bold mx-auto w-[150px] border-green-600 h-[45px] rounded-[25px] ">Discover More</button>
             </div>
@@ -117,13 +117,13 @@ const Home = () => {
 
 
 
-            <div className="five py-[30px] lg:py-[70px] text-center flex flex-col lg:flex-row lg:justify-start justify-center lg:items-center px-[17%]">
-                <div className="fiveone lg:w-[40%]">
-                    <h3 className="mb-[20px] text-sm lg:text-left  md:text-base text-green-600 font-semibold">WHAT WE OFFFER </h3>
-                    <h2 className="mb-[20px] text-xl md:text-2xl lg:text-left font-semibold">Professional and Quality Tax Consulting </h2>
+            <div className="five py-[30px] lg:py-[70px] text-center flex flex-col lg:flex-row lg:gap-[40px] lg:justify-start justify-center lg:items-center px-[17%]">
+                <div className="fiveone lg:w-[50%]">
+                    <h3 className="mb-[20px] text-sm lg:text-left  md:text-base  text-green-600 font-semibold">WHAT WE OFFFER </h3>
+                    <h2 className="mb-[20px] text-xl md:text-2xl lg:text-[27px] lg:text-left font-semibold">Professional and Quality Tax Consulting </h2>
                 </div>
                 <div className="fivetwo lg:flex lg:flex-col lg:text-left">
-                    <p className="mb-[20px] text-sm md:text-base lg:w-[80%]">e are in a fast moving and significant regulatory 
+                    <p className="mb-[20px] text-sm md:text-base lg:w-[80%]">We are in a fast moving and significant regulatory 
                     development environment. We understand the impact of these
                      developments in your business operations and transactions</p>
                     <button className="bbb mx-auto lg:mx-[0]">ALL SERVICES</button>
@@ -199,7 +199,7 @@ const Home = () => {
                         provide expert services that your busines can benefit from.</p>
                     <button className="bbb mx-auto lg:mx-[0]">ALL MEMBERS</button>
                 </div>
-                <div className="seventwo py-[20px] flex md:flex-row md:justify-center lg:justify-center md:flex-wrap flex-col gap-[20px]">
+                <div className="seventwo py-[20px] flex md:flex-row md:justify-center lg:justify-center lg:items-center flex-col gap-[20px]">
                     <div className="p1 ppcd">
                         <div className="ppim">
                             <img src={require("../images/people/man1.jpg")} alt="" />
@@ -236,7 +236,7 @@ const Home = () => {
 
 
             <div className="eight h-[400px] bg-gray-700 text-center flex flex-col justify-center lg:items-start px-[17%] text-slate-50">
-                <h2 className="mb-[20px] text-2xl font-semibold lg:text-3xl lg:w-[35%] lg:text-left">Caring For Your Taxes, So You Don’t Have To </h2>
+                <h2 className="mb-[20px] text-2xl font-semibold lg:text-3xl lg:w-[42%] lg:text-[33px] lg:text-left">Caring For Your Taxes, So You Don’t Have To </h2>
                 <p className="mb-[20px] text-sm md:text-base lg:w-[45%] lg:text-left"> We take care of your books so that you can focus on the core aspect of your business.
                      No need to balance numbes on a book anymore or wonder why numbers are not adding up, 
                       let us stress about the numbers for you.</p>
@@ -310,16 +310,16 @@ const Home = () => {
 
 
 
-            <div className="ten bg-teal-100 px-[17%] py-[30px] lg:py-[60px] flex flex-col lg:flex-row lg:justify-between gap-[30px] text-sm md:text-base">
+            <div className="ten bg-teal-100 px-[17%] py-[30px] lg:py-[60px] flex flex-col items-center lg:flex-row lg:justify-between gap-[30px] text-sm md:text-base">
                 <div className="tenone lg:w-[40%] text-xl md:text-2xl lg:font-semibold md:w-[80%] md:text-center lg:text-left">
                     <p>Signup out newsletter to get udpdate information, insights or news</p>
                 </div>
-                <div className="tentwo flex lg:items-center">
+                <div className="tentwo flex justify-center lg:items-center gap-[10px]">
                     <div>
-                        <input className="h-[40px] lg:h-[50px] px-[14px] rounded-[30px] lg:w-[450px]" type="text" placeholder="Enter your email" />
+                        <input className="h-[40px] w-[100%] lg:h-[50px] px-[14px] rounded-[30px] lg:w-[450px]" type="text" placeholder="Enter your email" />
                     </div>
                     <div>
-                        <button className="bbb ml-[-40px] lg:ml-[20px]">Signup</button>
+                        <button className="border-green-600 w-[80px] lg:w-[200px] bg-green-600 h-[40px] lg:h-[50px] rounded-[25px] text-stone-900 text-sm font-semibold">Signup</button>
                     </div>
                 </div>
 

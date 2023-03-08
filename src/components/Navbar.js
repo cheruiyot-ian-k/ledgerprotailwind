@@ -1,6 +1,7 @@
 import { faAngleDown, faBars, faContactCard, faHandshake, faHome, faUser, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () =>{
@@ -21,12 +22,12 @@ const Navbar = () =>{
             document.querySelector(".listnav").classList.add('hidden');
             // document.querySelector(".App").classList.remove('h-screen');
             // document.querySelector(".App").classList.remove('overflow-hidden');
-            setMenu("true");
+            setMenu("true"); 
         }
     }
 
     return(
-        <div className="navbar fixed top-px w-screen mt-[-1px]">
+        <div className="navbar fixed top-px w-screen mt-[-1px] shadow-md">
 
         
         <div className="nav relative cursor-pointer  flex justify-between px-[2%] lg:py-[13px] py-[3px] lg:pr-[70px] md:py-[8px] bg-slate-50">
@@ -42,23 +43,24 @@ const Navbar = () =>{
                 lg:text-xl text-green-500 lg:text-neutral-900">
                     <li className="flex gap-[10px]">
                         <div className="lg:hidden"><FontAwesomeIcon icon={faHome}/></div>
-                        <div>Home</div>
+                        <Link to='/'><div className="ghh">Home</div></Link>
+                    </li>
+                   
+                    <li className="servli flex gap-[10px] relative">
+                        <div className="lg:hidden"><FontAwesomeIcon icon={faHandshake}/></div>
+                        <Link to='/Services'> <div className="serv"> <span className="ghh"> Services </span> <span className="lg:inline lg:mt-[45px] sm:hidden md:hidden"><FontAwesomeIcon icon={faAngleDown}/></span>
+                            <div className="servsh absolute lg:bg-slate-50 lg:w-[300px] lg:text-center lg:mt-[13px] lg:ml-[-100px] lg:shadow-md "> 
+                                <div className="lg:p-[15px] lg:text-[16px] lg:border-t bhh"><h3 className="">Tax</h3></div>
+                                <div className="lg:p-[15px] lg:border-t lg:border-green-500 bhh lg:text-[16px]"><h3 className="">Outsourced Services</h3></div>
+                                <div className="lg:p-[15px] lg:border-t lg:border-green-500 bhh lg:text-[16px]"><h3 className="">Advisory</h3></div>
+                            
+                            </div>
+                        </div></Link>
+
                     </li>
                     <li className="flex gap-[10px]">
                         <div className="lg:hidden"><FontAwesomeIcon icon={faUser}/></div>
-                        <div>About Us</div>
-                    </li>
-                    <li className="servli flex gap-[10px] relative">
-                        <div className="lg:hidden"><FontAwesomeIcon icon={faHandshake}/></div>
-                        <div className="serv">Services <span className="lg:inline lg:mt-[45px] sm:hidden md:hidden"><FontAwesomeIcon icon={faAngleDown}/></span>
-                            <div className="servsh absolute lg:bg-slate-50 lg:w-[300px] lg:text-center lg:mt-[45px] lg:ml-[-100px] lg:shadow-md top-0 left-0 z-1"> 
-                                <div className="lg:p-[10px] lg:text-[16px] lg:border-t"><h3>Tax</h3></div>
-                                <div className="lg:p-[10px] lg:border-t lg:border-green-500  lg:text-[16px]"><h3>Outsourced Services</h3></div>
-                                <div className="lg:p-[10px] lg:border-t lg:border-green-500  lg:text-[16px]"><h3>Advisory</h3></div>
-                            
-                            </div>
-                        </div>
-
+                        <Link to='/About/Process'> <div className="ghh">About Us  </div></Link>
                     </li>
                     <li className="border-t border-gray-400 lg:hidden"></li>
                     <li className="flex gap-[10px] lg:border lg:p-[12px] lg:mt-[-12px] lg:bg-green-500 lg:rounded-full lg:w-[160px] lg:flex lg:justify-center lg:align-center ">

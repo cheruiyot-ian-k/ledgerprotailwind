@@ -17,26 +17,26 @@ const Footer = () =>{
                                     of taxes payable, computation of tax as well as preparation and filing of returns</p>
                    </div>
                    <div className="flex gap-[10px] justify-around text-[26px] lg:text-[18px] lg:w-[50%]">
-                        <div><FontAwesomeIcon icon={faFacebook}/></div>
+                        <div className="ghh cursor-pointer"><FontAwesomeIcon icon={faFacebook}/></div>
                         <div className="border-l-2 border-green-600"></div>
-                        <div><FontAwesomeIcon icon={faInstagram}/></div>
+                        <div className="ghh cursor-pointer"><FontAwesomeIcon icon={faInstagram}/></div>
                         <div className="border-l-2 border-green-600"></div>
-                        <div><FontAwesomeIcon icon={faTwitter}/></div>
+                        <div className="ghh cursor-pointer"><FontAwesomeIcon icon={faTwitter}/></div>
                         <div className="border-l-2 border-green-600"></div>
-                        <div><FontAwesomeIcon icon={faLinkedin}/></div>
+                        <div className="ghh cursor-pointer"><FontAwesomeIcon icon={faLinkedin}/></div>
                    </div>
                 </div>
                 <div className="elevencont lg:justify-between lg:w-[55%] flex flex-col gap-[30px] md:flex-row md:justify-between">
 
                 
-                <div className="eleventwo text-sm md:text-base flex flex-col gap-[6px]">
+                <div className="eleventwo text-sm md:text-base flex flex-col gap-[6px] lg:gap-[10px]">
                     <div className="text-xl font-semibold"><h3>Services</h3></div>
                     <div className="etw flex gap-[14px]">
                         <div className="etic">
 
                         </div>
                         <div className="ettwo">
-                            <p>Tax</p>
+                            <p className="ghh cursor-pointer">Tax</p>
                         </div>
                     </div>
                     <div className="etw flex gap-[14px]">
@@ -44,7 +44,7 @@ const Footer = () =>{
 
                         </div>
                         <div className="ettwo">
-                            <p>Outsource Services</p>
+                            <p className="ghh cursor-pointer">Outsource Services</p>
                         </div>
                     </div>
                     <div className="etw flex gap-[14px]">
@@ -52,18 +52,18 @@ const Footer = () =>{
 
                         </div>
                         <div className="ettwo">
-                            <p>Advisory</p>
+                            <p className="ghh cursor-pointer">Advisory</p>
                         </div>
                     </div>
                 </div>
-                <div className="eleventwo text-sm md:text-base flex flex-col gap-[6px]">
+                <div className="eleventwo text-sm md:text-base flex flex-col gap-[6px] lg:gap-[10px]">
                     <div className="text-xl font-semibold"><h3>Quick Links</h3></div>
                     <div className="etw flex gap-[14px]">
                         <div className="etic">
 
                         </div>
                         <div className="ettwo">
-                            <p>Home</p>
+                            <p className="ghh cursor-pointer">Home</p>
                         </div>
                     </div>
                     <div className="etw flex gap-[14px]">
@@ -71,7 +71,7 @@ const Footer = () =>{
 
                         </div>
                         <div className="ettwo">
-                            <p>About Us</p>
+                            <p className="ghh cursor-pointer">About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         </div>
                     </div>
                     <div className="etw flex gap-[14px]">
@@ -79,18 +79,18 @@ const Footer = () =>{
 
                         </div>
                         <div className="ettwo">
-                            <p>Services</p>
+                            <p className="ghh cursor-pointer">Services</p>
                         </div>
                     </div>
                 </div>
-                <div className="eleventwo text-sm md:text-base flex flex-col gap-[6px]">
+                <div className="eleventwo text-sm md:text-base flex flex-col gap-[6px] lg:gap-[10px]">
                     <div className="text-xl font-semibold"><h3>Contact Us</h3></div>
                     <div className="etw flex gap-[14px]">
                         <div className="text-green-500">
                             <span><FontAwesomeIcon icon={faContactBook}/></span>
                         </div>
                         <div className="ettwo">
-                            <p>+254722658806</p>
+                            <p className="ghh cursor-pointer">+254722658806</p>
                         </div>
                     </div>
                     <div className="etw flex gap-[14px]">
@@ -98,7 +98,7 @@ const Footer = () =>{
                              <span><FontAwesomeIcon icon={faLocationPin}/></span>
                         </div>
                         <div className="ettwo">
-                            <p>Repen Complex, Nairobi</p>
+                            <p className="ghh cursor-pointer">Repen Complex, Nairobi</p>
                         </div>
                     </div>
                     <div className="etw flex gap-[14px]">
@@ -106,7 +106,7 @@ const Footer = () =>{
                             <span><FontAwesomeIcon icon={faMailBulk}/></span>
                         </div>
                         <div className="ettwo">
-                            <p>info@ledgerpro.co.ke</p>
+                            <p className="ghh cursor-pointer">info@ledgerpro.co.ke</p>
                         </div>
                     </div>
                 </div>

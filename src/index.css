@@ -21,19 +21,14 @@
 }
 
 .sbb{
-  @apply shadow-md px-[20px] md:px-[35px] lg:py-[50px] lg:py-[10px] py-[5px];
+  @apply shadow-md w-[100%];
 }
 
 .slsd{
   box-shadow:  240px 180px 500px #9c9494;
              /* -50px -50px 100px #363434; */
 }
-.servsh{
-  display: none;
-}
-.servli:hover .servsh{
-  display: block;
-}
+
 
 .bbb{
   @apply border-green-600 w-[150px] lg:w-[200px] bg-green-600 h-[40px] lg:h-[50px] rounded-[25px] text-stone-900 font-semibold ;
@@ -47,7 +42,7 @@
   @apply flex flex-col items-center justify-center relative;
 }
 .ppim{
-  @apply bg-gray-200 w-[200px] lg:w-[230px];
+  @apply bg-gray-200 w-[200px] lg:w-[100%];
 }
 
 .ten{
@@ -59,6 +54,29 @@
 }
 .etb{
 
+}
+.ghh:hover{
+  color: var(--hover);
+}
+.bhh:hover{
+  background-color: var(--green);
+}
+
+.statone{
+  box-shadow: 1px 3px 4px 0px black,
+                1px 2px 4px 0px black;
+}
+.twodet{
+   box-shadow: 1px 3px 4px 0px black,
+                1px 2px 4px 0px black;
+}
+.sixone{
+   box-shadow: 1px 3px 10px 0px black,
+                1px 2px 1px 0px black;
+}
+.t1{
+   box-shadow: 1px 3px 10px 0px black,
+                1px 2px 1px 0px black;
 }
 
 
@@ -79,6 +97,9 @@
     background-image: url(images/mobile/Happy\ woman.jpg);
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
   }
+  .servsh{
+    display: none;
+  }
 }
 @media only screen and (min-width: 480px) {
   .one{
@@ -96,6 +117,9 @@
     background-image: url(images/mobile/Happy\ woman.jpg);
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
   }
+  .servsh{
+    display: none;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .one{
@@ -112,5 +136,11 @@
   .eight{
     background-image: url(images/pc/Black-couple.jpg);
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+  }
+  .servsh{
+    display: none;
+  }
+  .servli:hover .servsh{
+    display: block;
   }
 }
